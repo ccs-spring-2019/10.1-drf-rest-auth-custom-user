@@ -18,13 +18,13 @@ class About extends Component {
 
     registerUser = () => {
         let user = {};
-        user.email = 'jeffwho@example.com';
+        user.email = 'sara@example.com';
         user.password1 = 'safepass1';
         user.password2 = 'safepass1';
-        user.name = 'jeff smith';
-        user.username='jeff who this'
+        // user.name = 'jeff smith';
+        // user.username='jeff who this'
 
-        axios.post('/api/v1/rest-auth/registration/', user)
+        axios.post('/api/v1/accounts/rest-auth/registration/', user)
             .then(response => {
                 console.log(response)
             })

@@ -8,8 +8,6 @@ from allauth.account.utils import setup_user_email
 
 class RegisterSerializer(serializers.Serializer):
     email = serializers.EmailField(required=allauth_settings.EMAIL_REQUIRED)
-    username = serializers.CharField(required=True, write_only=True)
-    name = serializers.CharField(required=True, write_only=True)
     password1 = serializers.CharField(required=True, write_only=True)
     password2 = serializers.CharField(required=True, write_only=True)
 
